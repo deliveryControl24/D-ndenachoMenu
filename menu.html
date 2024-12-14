@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            background-image: linear-gradient(135deg, #1b1b1b, #3a3a3a);
+            background-size: cover;
+            background-blend-mode: overlay;
+            padding: 20px;
+        }
+        .menu { margin-bottom: 20px; }
+        h1, h2, h3 {
+            color: #ffcc00;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        .seleccion { margin-top: 20px; }
+        input[type="text"], select {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+        }
+        button {
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #000;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Menú del Restaurante</h1>
+
+<div class="menu">
+    <h2>ASADOS</h2>
+    <label><input type="checkbox" name="asado" value="Costilla de cerdo - C$300"> Costilla de cerdo - C$300</label>
+    <label><input type="checkbox" name="asado" value="Pollo asado - C$220"> Pollo asado - C$220</label>
+    <label><input type="checkbox" name="asado" value="Cerdo asado - C$220"> Cerdo asado - C$220</label>
+    <label><input type="checkbox" name="asado" value="Corazón asado - C$220"> Corazón asado - C$220</label>
+    <label><input type="checkbox" name="asado" value="Conces asados - C$450"> Conces asados - C$450</label>
+    <label><input type="checkbox" name="asado" value="Lomo de costilla (asado) - C$470"> Lomo de costilla (asado) - C$470</label>
+
+    <h2>MARISCO</h2>
+    <label><input type="checkbox" name="marisco" value="Camarones a la plancha - C$370"> Camarones a la plancha - C$370</label>
+    <label><input type="checkbox" name="marisco" value="Camarones empanizados - C$370"> Camarones empanizados - C$370</label>
+    <label><input type="checkbox" name="marisco" value="Camarones al ajo - C$370"> Camarones al ajo - C$370</label>
+    <label><input type="checkbox" name="marisco" value="Curvina a la plancha - C$370"> Curvina a la plancha - C$370</label>
+
+    <h2>POLLO</h2>
+    <label><input type="checkbox" name="pollo" value="Pollo a la plancha - C$350"> Pollo a la plancha - C$350</label>
+    <label><input type="checkbox" name="pollo" value="Pollo al vino - C$350"> Pollo al vino - C$350</label>
+    <label><input type="checkbox" name="pollo" value="Pollo jalapeño - C$350"> Pollo jalapeño - C$350</label>
+    <label><input type="checkbox" name="pollo" value="Pollo a la plancha (T/Boca) - C$400"> Pollo a la plancha (T/Boca) - C$400</label>
+
+    <h2>BEBIDAS</h2>
+    <label><input type="checkbox" name="bebida" value="Limonada - C$40"> Limonada - C$40</label>
+    <label><input type="checkbox" name="bebida" value="Gaseosa - C$30"> Gaseosa - C$30</label>
+    <label><input type="checkbox" name="bebida" value="Té de limón - C$40"> Té de limón - C$40</label>
+    <label><input type="checkbox" name="bebida" value="Jugo de naranja - C$40"> Jugo de naranja - C$40</label>
+    <label><input type="checkbox" name="bebida" value="Agua embotellada - C$40"> Agua embotellada - C$40</label>
+
+    <h2>EXTRAS</h2>
+    <label><input type="checkbox" name="extra" value="Extra de arroz o gallo pinto - C$20"> Extra de arroz o gallo pinto - C$20</label>
+    <label><input type="checkbox" name="extra" value="Extra de papas - C$40"> Extra de papas - C$40</label>
+    <label><input type="checkbox" name="extra" value="Extra de ensalada - C$40"> Extra de ensalada - C$40</label>
+    <label><input type="checkbox" name="extra" value="Extra de tostones - C$40"> Extra de tostones - C$40</label>
+    <label><input type="checkbox" name="extra" value="Extra de chimichurri - C$40"> Extra de chimichurri - C$40</label>
+    <label><input type="checkbox" name="extra" value="Extra de jalapeño - C$40"> Extra de jalapeño - C$40</label>
+    <label><input type="checkbox" name="extra" value="Extra de queso - C$50"> Extra de queso - C$50</label>
+
+    <h2>CERVEZAS Y LICORES</h2>
+    <h3>Licores</h3>
+    <select id="licorSelect">
+        <option value="">Seleccione un licor</option>
+        <option value="Toña">Toña</option>
+        <option value="Toña Light">Toña Light</option>
+        <option value="Victoria Clásica">Victoria Clásica</option>
+        <option value="Victoria Frost">Victoria Frost</option>
+        <option value="Sol">Sol</option>
+        <option value="Heineken">Heineken</option>
+        <option value="Bamboo">Bamboo</option>
+        <option value="Adán y Eva">Adán y Eva</option>
+        <option value="Bliss">Bliss</option>
+        <option value="Hard Seltzer Spark">Hard Seltzer Spark</option>
+        <option value="Smirnoff">Smirnoff</option>
+        <option value="Ron Flor de Caña (Gran Reserva)">Ron Flor de Caña (Gran Reserva)</option>
+        <option value="Ron Flor de Caña (Ultra Lite)">Ron Flor de Caña (Ultra Lite)</option>
+        <option value="Tequila Jose Cuervo Especial">Tequila Jose Cuervo Especial</option>
+        <option value="Whisky Johnnie Walker Red">Whisky Johnnie Walker Red</option>
+        <option value="Whisky Johnnie Walker Black">Whisky Johnnie Walker Black</option>
+    </select>
+</div>
+
+<div class="seleccion">
+    <h2>Selección Actual:</h2>
+    <div id="seleccionActual"></div>
+</div>
+
+<button onclick="enviarPedido()">Enviar Pedido por WhatsApp</button>
+
+<script>
+    // Actualiza la selección actual
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            const seleccionActual = document.getElementById('seleccionActual');
+            seleccionActual.innerHTML = '';
+            checkboxes.forEach(ch => {
+                if (ch.checked) {
+                    seleccionActual.innerHTML += `<p>${ch.value}</p>`;
+                }
+            });
+        });
+    });
+
+    // Función para enviar el pedido por WhatsApp
+    function enviarPedido() {
+        const seleccionActual = Array.from(checkboxes)
+            .filter(ch => ch.checked)
+            .map(ch => ch.value)
+            .join(', ');
+
+        const licorSeleccionado = document.getElementById('licorSelect').value;
+
+        if (seleccionActual) {
+            const mensaje = `Hola! He seleccionado: ${seleccionActual}${licorSeleccionado ? ` y ${licorSeleccionado}` : ''}.`;
+            const numeroWhatsApp = "+50584751878"; // Número de WhatsApp
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+            window.open(whatsappUrl, '_blank');
+        } else {
+            alert('Por favor, selecciona al menos un elemento del menú.');
+        }
+    }
+</script>
+
+</body>
+</html>
